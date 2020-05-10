@@ -15,7 +15,7 @@ typedef struct {
 // Lua: helloworldobj:hello(text)
 static int helloworld_hello(lua_State* L) {
     hello_context_t* context = (hello_context_t*)luaL_checkudata(L, 1, HELLOWORLD_METATABLE);
-    printf("Hello, %s: %s\n", context->my_name, luaL_optstring(L, 2, "How are you?"));
+    printf("<DEVELOPMENT VERSION!!> Hola, %s: %s\n", context->my_name, luaL_optstring(L, 2, "How are you?"));
     return 0;
 }
 
