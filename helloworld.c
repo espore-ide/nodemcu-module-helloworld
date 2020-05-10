@@ -57,7 +57,4 @@ static int module_init(lua_State* L) {
     return 0;
 }
 
-//static const LOCK_IN_SECTION(libs) luaR_entry lua_lib_mylib = {MODNAME, LRO_FUNCVAL(module_init)};
-//const LOCK_IN_SECTION(rotable) luaR_entry MODULE_EXPAND_PASTE_(EXTMODNAME, _entry) = {MODNAME, LRO_ROVAL(module_map)};
-
 NODEMCU_MODULE_STD();
