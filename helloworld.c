@@ -52,9 +52,10 @@ LROT_BEGIN(module)
 LROT_FUNCENTRY(new, helloworld_new)
 LROT_END(module, NULL, 0)
 
+// module_init is invoked on device startup
 static int module_init(lua_State* L) {
     luaL_rometatable(L, HELLOWORLD_METATABLE, (void*)helloworld_metatable_map);  // create metatable for helloworld
     return 0;
 }
 
-NODEMCU_MODULE_STD();
+NODEMCU_MODULE_STD();  // define Lua entries
