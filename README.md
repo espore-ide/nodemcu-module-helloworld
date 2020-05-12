@@ -15,6 +15,6 @@ Then, run `make extmod-update flash`
 You will be able to access `helloworld` in lua:
 
 ```lua
-greeter = helloworld:new("Javier")
+greeter = helloworld.new("Javier")
 greeter:hello("NodeMCU rocks!")
 ```
